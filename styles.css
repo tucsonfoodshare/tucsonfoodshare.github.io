@@ -1199,6 +1199,10 @@ nav {
     .navbar-collapse {
         margin-top: 20px;
     }
+
+    .main-container {
+        margin-top: 4rem;
+    }
 }
 
 :-moz-placeholder {

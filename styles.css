@@ -1120,12 +1120,6 @@ nav {
     }
 }
 
-@media all and (max-width: 991px) {
-    .menu li a {
-        padding: 10px 0;
-    }
-}
-
 .nav-container {
     min-height: 56px;
 }
@@ -1181,6 +1175,11 @@ nav {
         width: 84%;
     }
 
+    .main-navigation {
+        position: fixed;
+        z-index: 1;
+    }
+
     .nav-bar,
     .nav-bar .module-group,
     .nav-bar .module,
@@ -1202,8 +1201,16 @@ nav {
         width: 100%;
     }
 
+    .collapse.open {
+        display: block;
+    }
+
     .main-navigation .menu {
         height: auto;
+    }
+
+    .collapse.open .menu {
+        display: block;
     }
 
     .main-navigation .menu a {
@@ -1217,6 +1224,7 @@ nav {
         display: block;
         width: 100%;
         max-width: 100%;
+        padding: 1rem;
     }
 
     .module.widget-handle {

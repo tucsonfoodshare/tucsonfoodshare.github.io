@@ -5,9 +5,7 @@ jQuery(document).ready(function ($) {
         });
     }
 
-    if ($(window).width() <= 991) {
-        $('.mobile-toggle').on('click', function () {
-            $('.collapse').toggleClass('open');
-        });
-    }
+    $('.mobile-toggle').on('click', function () {
+        $('.collapse').toggleClass('open');
+    });
 });

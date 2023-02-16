@@ -328,6 +328,9 @@ ul {
 }
 
 @media (min-width:992px) {
+    .navbar-collapse.collapse {
+        display: block;
+    }
     .container {
         width: 970px;
     }
@@ -447,13 +450,6 @@ ul {
         border-top: 0;
         -webkit-box-shadow: none;
         box-shadow: none;
-    }
-
-    .navbar-collapse.collapse {
-        display: block !important;
-        height: auto !important;
-        padding-bottom: 0;
-        overflow: visible !important;
     }
 }
 

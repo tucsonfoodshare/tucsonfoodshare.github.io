@@ -3,9 +3,10 @@
 const post_announcements = ($) => {
     const header = "Special header value leave me here";
     const footer = "Special footer value leave me here";
-    const regex = new RegExp(`${header}(\\\\n)+(?<announcements>[a-zA-Z0-9].*[a-zA-Z0-9])(\\\\n)+${footer}`);
+    const url = "https://docs.google.com/document/d/1oua98OaFsRKr2h1O6xs-y2wMqJDusQmetHB-0A7YIU8/edit?usp=sharing";
+    const regex = new RegExp(`${header}(\\\\n)+(?<announcements>[\(\)a-zA-Z0-9].*[\(\)a-zA-Z0-9])(\\\\n)+${footer}`);
 
-    fetch('https://docs.google.com/document/d/1oua98OaFsRKr2h1O6xs-y2wMqJDusQmetHB-0A7YIU8/edit?usp=sharing')
+    fetch(url)
       .then((response) => response.text())
       .then((text) => {
         const match = text.match(regex);

@@ -11,18 +11,19 @@ hugo serve
 Which spawns a web server on `localhost:1313` by default. The project's structure looks like:
 
 ```txt
-tucsonfoodshare.github.io
+tucsonfoodshare.github.io/
 |- content/
 |- layouts/
 |- static/
-.gitignore
-hugo.toml
-````
+|- hugo.toml
+|- .gitignore
+```
 
-- **content** is the folder where markdown lives. Because markdown can contain HTML elements, it's not always a clear distinction, but it should tend that way.
+- **[content](content)** is the folder where markdown lives. Because markdown can contain HTML elements, it's not always a clear distinction, but it should tend that way.
   - Some markdown files contain `{{% shortcodes %}}`. These map to html snippets in [layouts/shortcodes](layouts/shortcodes), allowing more fine-grained styling (via typical HTML and CSS classes) of components of your content.
-- **layouts** is the folder where html lives. For each file in `content`, it looks for a corresponding layout and falls back to `_default/baseof.html` if one doesn't exist. `baseof.html`, I believe, then instantiates [layouts/_default/single.html](layouts/_default/single.html) or, for the homepage because of [static/js/homepage.js](static/js/homepage.js), [layouts/index.html](layouts/index.html). Meanwhile, layouts can instantiate `layouts/partials`. Partials are, similar to shortcodes, reusable HTML snippets you can insert as needed. _Partial_ files.
-- **static** is the folder containing static assets.
-- **hugo.toml** is the top level Hugo configuration and settings file.
+- **[layouts](layouts)** is the folder where html lives. For each file in `content`, it looks for a corresponding layout and falls back to `_default/baseof.html` if one doesn't exist. `baseof.html` then instantiates [layouts/_default/single.html](layouts/_default/single.html) for regular pages, or [layouts/index.html](layouts/index.html) for the homepage. Layouts can also instantiate `layouts/partials` — reusable HTML snippets you can insert as needed.
+  - There's also a `layouts/_default/_markup/` folder containing render hooks, which override how Hugo renders certain markdown elements (e.g. links open in a new tab if external).
+- **[static](static)** is the folder containing static assets.
+- **[hugo.toml](hugo.toml)** is the top level Hugo configuration and settings file.
 
 Aside from that, Hugo is mysterious sometimes, and I still don't always 100\% get it.

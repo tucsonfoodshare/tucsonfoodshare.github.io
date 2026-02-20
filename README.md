@@ -1,6 +1,6 @@
 # Tucson Food Share Website
 
-This website used to be WordPress. It got refactored to be pure HTML and then later [hugo](https://gohugo.io/), so keep that in mind if things seem quirky. Hugo is a simple static site generator based around a separation of content (written in markdown-ish) and layouts (HTML with some templating and slightly opaque composition rules).
+This website used to be WordPress. It got scraped to be pure HTML and then later [hugo](https://gohugo.io/), so keep that in mind if things seem quirky. Hugo is a simple static site generator based around a separation of content (written in markdown-ish) and layouts (HTML with some templating and slightly opaque composition rules).
 
 To get started with hugo, once you have it installed, you can launch a development server with
 

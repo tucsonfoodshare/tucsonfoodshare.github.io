@@ -21,7 +21,7 @@ tucsonfoodshare.github.io/
 
 - **[content](content)** is the folder where markdown lives. Because markdown can contain HTML elements, it's not always a clear distinction, but it should tend that way.
   - Some markdown files contain `{{% shortcodes %}}`. These map to html snippets in [layouts/shortcodes](layouts/shortcodes), allowing more fine-grained styling (via typical HTML and CSS classes) of components of your content.
-- **[layouts](layouts)** is the folder where html lives. For each file in `content`, it looks for a corresponding layout and falls back to `_default/baseof.html` if one doesn't exist. `baseof.html` then instantiates [layouts/_default/single.html](layouts/_default/single.html) for regular pages, or [layouts/index.html](layouts/index.html) for the homepage. Layouts can also instantiate `layouts/partials` — reusable HTML snippets you can insert as needed.
+- **[layouts](layouts)** is the folder where html lives. For each file in `content`, it looks for a corresponding layout and falls back to `_default/baseof.html` if one doesn't exist. `baseof.html` defines the outer shell (head, nav, footer). Regular pages extend it via [layouts/_default/single.html](layouts/_default/single.html), and the homepage via [layouts/index.html](layouts/index.html), both filling in its content blocks. Layouts can also instantiate `layouts/partials` — reusable HTML snippets you can insert as needed.
   - There's also a `layouts/_default/_markup/` folder containing render hooks, which override how Hugo renders certain markdown elements (e.g. links open in a new tab if external).
 - **[static](static)** is the folder containing static assets.
 - **[hugo.toml](hugo.toml)** is the top level Hugo configuration and settings file.

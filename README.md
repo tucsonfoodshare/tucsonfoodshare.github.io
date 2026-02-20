@@ -10,12 +10,14 @@ hugo serve
 
 Which spawns a web server on `localhost:1313` by default. The project's structure looks like:
 
+```txt
 tucsonfoodshare.github.io
 |- content
 |- layouts
 |- static
 .gitignore
 hugo.toml
+````
 
 - **content** is the folder where markdown lives. Because markdown can contain HTML elements, it's not always a clear distinction, but it should tend that way.
   - Some markdown files contain `{{% shortcodes %}}`. These map to html snippets in [layouts/shortcodes](layouts/shortcodes), allowing more fine-grained styling (via typical HTML and CSS classes) of components of your content.

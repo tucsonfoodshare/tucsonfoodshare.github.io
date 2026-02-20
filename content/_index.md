@@ -9,19 +9,19 @@ title: "Tucson Food Share"
 {{% center %}}
 ## Grocery Sharing Hours
 
-#### Monday 4:30pm-6:00pm
-#### Thursday 6:00pm-7:30pm
-#### Saturday 8:00am-9:30am
+### Monday 4:30pm-6:00pm
+### Thursday 6:00pm-7:30pm
+### Saturday 8:00am-9:30am
 
-#### **at 2500 N Stone Ave**
+### **at 2500 N Stone Ave**
 {{% /center %}}
 
 ---
 
 {{% green %}}
-#### Just bring yourself – No need to prove income or provide any kind of documentation. Food is available to anyone who asks.
+### Just bring yourself – No need to prove income or provide any kind of documentation. Food is available to anyone who asks.
 
-#### If you are able to, please bring bags for groceries with you.
+### If you are able to, please bring bags for groceries with you.
 {{% /green %}}
 
 ---

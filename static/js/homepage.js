@@ -39,10 +39,10 @@ const post_announcements = ($) => {
         if (announcements) {
           console.log(announcements);
           $('#announcement_box').html(`
-              <hr class='wp-block-separator has-css-opacity'>
-              <h2>Announcements / Anuncios</h4>
+              <hr>
+              <h2>Announcements / Anuncios</h2>
               <h4>${announcements.replaceAll('\\n', '<br>')}</h4>
-              <hr class='wp-block-separator has-css-opacity'>
+              <hr>
           `);
         } else {
           console.log("No announcements!");

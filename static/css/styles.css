@@ -33,7 +33,7 @@ article, figure, footer, header, nav, section {
 }
 
 /* === Typography === */
-h2, h4 {
+h2, h3, h4 {
     font-family: inherit;
     font-weight: 400;
     color: var(--dark);
@@ -43,10 +43,12 @@ h2, h4 {
 }
 
 h2 { font-size: 45px; line-height: 48px; }
+h3 { font-size: 30px; line-height: 36px; }
 h4 { font-size: 25px; line-height: 30px; }
 
 @media (max-width: 767px) {
     h2 { font-size: 32px; line-height: 40px; }
+    h3 { font-size: 24px; line-height: 30px; }
     h4 { font-size: 18px; line-height: 26px; }
 }
 
@@ -141,6 +143,7 @@ a:hover, a:focus, a:active {
 }
 
 .text-right { text-align: right; }
+.text-center { text-align: center; }
 
 /* === Buttons === */
 .btn {
@@ -431,7 +434,7 @@ footer  { padding: 72px 0; }
     section { padding: 80px 0; }
 }
 
-section.content-area { padding-top: 0; }
+section.content-area { padding-top: 48px; }
 
 .no-sidebar {
     float: none;
@@ -444,6 +447,12 @@ section.content-area { padding-top: 0; }
     content: "";
     display: table;
     clear: both;
+}
+
+.entry-content figure {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* === Footer === */
@@ -523,39 +532,13 @@ footer.bg-dark a { color: #fff; }
     .mb-xs-24 { margin-bottom: 24px; }
 }
 
-/* === WordPress block utilities === */
-.wp-block-image img {
-    height: auto;
-    max-width: 100%;
-    vertical-align: bottom;
-    box-sizing: border-box;
-}
-
-.wp-block-image .aligncenter {
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.wp-block-image figure { margin: 0; }
-
-.wp-block-separator {
-    border: 1px solid;
-    border-right: none;
-    border-left: none;
-}
-
-.has-text-align-center { text-align: center; }
-
-.aligncenter {
-    clear: both;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* === Utilities === */
 .green { color: var(--green); }
+
+.green h1, .green h2, .green h3, .green h4, .green h5, .green h6,
+.green p {
+    color: inherit;
+}
 
 .screen-reader-text {
     border: 0;

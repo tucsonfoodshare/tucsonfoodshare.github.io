@@ -1,0 +1,6 @@
+baseURL = "https://tucsonfoodshare.github.io/"
+languageCode = "en-US"
+title = "Tucson Food Share"
+
+[markup.goldmark.renderer]
+  unsafe = true

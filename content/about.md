@@ -62,6 +62,28 @@ La mecánica de TFS está en constante cambio. No hay nadie "a cargo" y los part
 
 ### ***Tucson Food Share is proudly in cahoots with these collectives, organizations, and businesses / Tucson Food Share se enorgullece de estar en connivencia con estos colectivos, organizaciones y empresas:***
 
-Food Not Bombs Tucson, Pivot Produce, Tucson CSA, Root + Branch, South Tucson Community Outreach, Community Food Bank of Southern Arizona, Dos Bellotas Tucson, Church of Safe Injection Tucson, Food Conspiracy Co-op, Blacklidge Community Collective, Tucson Mask Share, Keeling Mutual Aid, Iskashitaa Refuge Network, Community Gardens of Tucson, Tucson Sharon Seventh Day Adventist Church, Natural Grocers, Bruegger's Bagels, Market On the Move / The 3000 Club, Myers Community Fridge, countless informal mutual aid efforts, ...and many more every day!
+<ul style="list-style:none; padding-left:0; margin-top:1em;">
+<li>Food Not Bombs Tucson</li>
+<li>Pivot Produce</li>
+<li>Tucson CSA</li>
+<li>Root + Branch</li>
+<li>South Tucson Community Outreach</li>
+<li>Community Food Bank of Southern Arizona</li>
+<li>Dos Bellotas Tucson</li>
+<li>Church of Safe Injection Tucson</li>
+<li>Food Conspiracy Co-op</li>
+<li>Blacklidge Community Collective</li>
+<li>Tucson Mask Share</li>
+<li>Keeling Mutual Aid</li>
+<li>Iskashitaa Refuge Network</li>
+<li>Community Gardens of Tucson</li>
+<li>Tucson Sharon Seventh Day Adventist Church</li>
+<li>Natural Grocers</li>
+<li>Bruegger's Bagels</li>
+<li>Market On the Move / The 3000 Club</li>
+<li>Myers Community Fridge</li>
+<li>countless informal mutual aid efforts</li>
+<li>…and many more every day!</li>
+</ul>
 
 {{< figure src="/images/CSA-stamp-horizontal-with-tagline-primary-green.png" alt="Tucson CSA Logo" width="258" height="106" >}}

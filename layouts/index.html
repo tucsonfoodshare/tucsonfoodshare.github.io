@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section class="content-area">
+    <div id="main" class="container" role="main">
+        <div class="row">
+            <div id="primary" class="col-md-12 mb-xs-24 no-sidebar">
+                <article class="post-content">
+                    <div class="entry-content">
+                        {{ .Content }}
+                    </div>
+                </article>
+            </div><!-- #primary -->
+        </div>
+    </div><!-- #main -->
+</section><!-- section -->
+{{ end }}
+
+{{ define "scripts" }}
+<script type="text/javascript" src="/js/homepage.js"></script>
+{{ end }}

@@ -193,6 +193,14 @@ a:hover, a:focus, a:active {
 }
 
 /* === Navigation === */
+@media (min-width: 992px) {
+    #masthead {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+}
+
 nav {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #fff;

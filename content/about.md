@@ -2,7 +2,9 @@
 title: "About"
 ---
 
-## About Tucson Food Share / Acerda de Tucson Food Share
+## About Tucson Food Share
+
+Español [abajo](#acerda-de-tucson-food-share)
 
 ### **What It Is**
 
@@ -31,6 +33,8 @@ The mechanics of TFS are constantly in flux. There is no one "in charge" and par
 - We hold weekly meetings to discuss in real-time
 
 ---
+
+## Acerda de Tucson Food Share
 
 {{% lang "es" %}}
 ### **Lo que es**

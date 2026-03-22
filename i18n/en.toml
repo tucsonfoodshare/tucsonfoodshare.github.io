@@ -1,0 +1,38 @@
+[nav_about]
+other = "About"
+
+[nav_delivery]
+other = "Delivery"
+
+[nav_donate]
+other = "Donate"
+
+[nav_volunteer]
+other = "Volunteer"
+
+[nav_contact]
+other = "Contact"
+
+[footer_get_in_touch]
+other = "Get In Touch"
+
+[footer_phone]
+other = "Phone"
+
+[footer_email]
+other = "Email"
+
+[lang_switch_full]
+other = "Español"
+
+[lang_switch_short]
+other = "ES"
+
+[skip_to_content]
+other = "Skip to content"
+
+[open_nav_menu]
+other = "Open navigation menu"
+
+[back_to_top]
+other = "Back to top"

@@ -1,0 +1,38 @@
+[nav_about]
+other = "Acerca de"
+
+[nav_delivery]
+other = "Entrega"
+
+[nav_donate]
+other = "Donar"
+
+[nav_volunteer]
+other = "Voluntario"
+
+[nav_contact]
+other = "Contacto"
+
+[footer_get_in_touch]
+other = "Contáctenos"
+
+[footer_phone]
+other = "Teléfono"
+
+[footer_email]
+other = "Correo electrónico"
+
+[lang_switch_full]
+other = "English"
+
+[lang_switch_short]
+other = "EN"
+
+[skip_to_content]
+other = "Saltar al contenido"
+
+[open_nav_menu]
+other = "Abrir menú de navegación"
+
+[back_to_top]
+other = "Volver arriba"

@@ -368,7 +368,7 @@ nav ul { margin-bottom: 0; }
 .mobile-toggle::-moz-focus-inner { border: 0; padding: 0; }
 
 @media (max-width: 991px) {
-    .site-title-container { width: 84%; }
+    .site-title-container { width: 74%; }
 
     .main-navigation { position: fixed; z-index: 1; }
 
@@ -589,4 +589,39 @@ footer.bg-dark a { color: #fff; }
     top: 5px;
     width: auto;
     z-index: 100000;
+}
+
+/* === Language Switcher === */
+
+/* Desktop: full name as last menu item, separated by border */
+@media (min-width: 992px) {
+    .menu .lang-switch-full {
+        margin-left: 0;
+        border-left: 1px solid #ddd;
+        padding-left: 32px;
+    }
+}
+
+/* Mobile: hide from hamburger menu since short code is always visible */
+@media (max-width: 991px) {
+    .main-navigation .menu li.lang-switch-full {
+        display: none;
+    }
+}
+
+/* Mobile: short code sits between title and hamburger */
+.lang-switch-short {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--green);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    line-height: 53px;
+    margin-right: 8px;
+    transition: color 0.3s ease;
+}
+
+.lang-switch-short:hover {
+    color: var(--green-light);
 }

@@ -1,0 +1,9 @@
+{{ if .Translations }}
+{{ $translation := index .Translations 0 }}
+<a href="{{ $translation.RelPermalink }}" class="lang-switch lang-switch-full" aria-label="{{ i18n "lang_switch_full" }}">
+    {{ i18n "lang_switch_full" }}
+</a>
+<a href="{{ $translation.RelPermalink }}" class="lang-switch lang-switch-short" aria-label="{{ i18n "lang_switch_full" }}">
+    {{ i18n "lang_switch_short" }}
+</a>
+{{ end }}

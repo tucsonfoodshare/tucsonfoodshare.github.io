@@ -26,8 +26,8 @@ title: "Tucson Food Share"
 
 ---
 
-[If you live within 6 miles of Grant & Stone and can't come to us, you may request a delivery..](https://forms.gle/UPh4HMmeQhRDFXnH7)
+[If you live within 6 miles of Grant & Stone and can't come to us, you may request a delivery.](https://forms.gle/UPh4HMmeQhRDFXnH7)
 
-[Donations graciously accepted but not expected.](/donate/)
+[Donations graciously accepted but not expected.]({{< ref "donate" >}})
 
-[Here's how you can get involved.](/volunteer/)
+[Here's how you can get involved.]({{< ref "volunteer" >}})

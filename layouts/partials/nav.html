@@ -4,20 +4,30 @@
             <div class="container nav-bar">
                 <div class="flex-row">
                     <div class="module left site-title-container">
-                        <a href="/" class="custom-logo-link"><span class="site-title">Tucson Food Share</span></a>
+                        <a href="{{ "/" | relLangURL }}" class="custom-logo-link"><span class="site-title">Tucson Food Share</span></a>
                     </div>
-                    <button class="module widget-handle mobile-toggle right visible-sm visible-xs" aria-label="Open navigation menu" aria-expanded="false">
+                    {{ if .Translations }}
+                    {{ $translation := index .Translations 0 }}
+                    <a href="{{ $translation.RelPermalink }}" class="lang-switch lang-switch-short visible-sm visible-xs" aria-label="{{ i18n "lang_switch_full" }}">
+                        {{ i18n "lang_switch_short" }}
+                    </a>
+                    {{ end }}
+                    <button class="module widget-handle mobile-toggle right visible-sm visible-xs" aria-label="{{ i18n "open_nav_menu" }}" aria-expanded="false">
                         <i class="fa fa-bars"></i>
                     </button>
                     <div class="module-group right">
                         <div class="module left">
                             <div class="collapse navbar-collapse navbar-ex1-collapse">
                                 <ul id="menu" class="menu">
-                                    <li class="menu-item"><a title="About" href="/about">About</a></li>
-                                    <li class="menu-item"><a title="Delivery" target="_blank" href="https://forms.gle/UPh4HMmeQhRDFXnH7">Delivery</a></li>
-                                    <li class="menu-item"><a title="Donate" href="/donate">Donate</a></li>
-                                    <li class="menu-item"><a title="Volunteer" href="/volunteer">Volunteer</a></li>
-                                    <li class="menu-item"><a title="Contact" href="#contact">Contact</a></li>
+                                    <li class="menu-item"><a title="{{ i18n "nav_about" }}" href="{{ "about/" | relLangURL }}">{{ i18n "nav_about" }}</a></li>
+                                    <li class="menu-item"><a title="{{ i18n "nav_delivery" }}" target="_blank" href="https://forms.gle/UPh4HMmeQhRDFXnH7">{{ i18n "nav_delivery" }}</a></li>
+                                    <li class="menu-item"><a title="{{ i18n "nav_donate" }}" href="{{ "donate/" | relLangURL }}">{{ i18n "nav_donate" }}</a></li>
+                                    <li class="menu-item"><a title="{{ i18n "nav_volunteer" }}" href="{{ "volunteer/" | relLangURL }}">{{ i18n "nav_volunteer" }}</a></li>
+                                    <li class="menu-item"><a title="{{ i18n "nav_contact" }}" href="#contact">{{ i18n "nav_contact" }}</a></li>
+                                    {{ if .Translations }}
+                                    {{ $translation := index .Translations 0 }}
+                                    <li class="menu-item lang-switch-full"><a href="{{ $translation.RelPermalink }}" title="{{ i18n "lang_switch_full" }}">{{ i18n "lang_switch_full" }}</a></li>
+                                    {{ end }}
                                 </ul>
                             </div>
                         </div>

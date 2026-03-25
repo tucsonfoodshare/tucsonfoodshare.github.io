@@ -1,6 +1,24 @@
 baseURL = "https://tucsonfoodshare.github.io/"
-languageCode = "en-US"
 title = "Tucson Food Share"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.en]
+    weight = 1
+    languageCode = "en-US"
+    languageName = "English"
+    contentDir = "content/en"
+
+  [languages.es]
+    weight = 2
+    languageCode = "es"
+    languageName = "Español"
+    contentDir = "content/es"
+    title = "Tucson Food Share"
+
+[taxonomies]
 
 [markup.goldmark.renderer]
   unsafe = true
